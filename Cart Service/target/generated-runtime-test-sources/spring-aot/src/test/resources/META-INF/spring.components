@@ -1,0 +1,7 @@
+#
+#Wed May 11 17:50:12 IST 2022
+com.capg.repository.CartRepository=org.springframework.stereotype.Component,org.springframework.data.repository.Repository
+com.capg.model.Cart=org.springframework.data.annotation.Persistent
+com.capg.CartServiceApplication=org.springframework.stereotype.Component,org.springframework.boot.SpringBootConfiguration
+com.capg.controller.CartController=org.springframework.stereotype.Component
+com.capg.service.CartService=org.springframework.stereotype.Component
