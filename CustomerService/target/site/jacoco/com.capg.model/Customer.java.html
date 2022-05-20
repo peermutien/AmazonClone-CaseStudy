@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Customer.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">CustomerService</a> &gt; <a href="index.source.html" class="el_package">com.capg.model</a> &gt; <span class="el_source">Customer.java</span></div><h1>Customer.java</h1><pre class="source lang-java linenums">package com.capg.model;
+
+
+import java.util.UUID;
+
+import javax.persistence.GeneratedValue;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+
+@Document(collection=&quot;customerInfo&quot;)
+public class Customer {
+
+	@Id
+	@GeneratedValue
+	private String id;
+	private UUID customerID;
+	private String custName;
+	private String custEmail;
+	private int custAge;
+	private String custPhoneNo;
+	private String custGender;
+	private String custAddress;
+	
+	public Customer() {
+<span class="nc" id="L27">		super();</span>
+		// TODO Auto-generated constructor stub
+<span class="nc" id="L29">	}</span>
+
+	public Customer(String id, UUID customerID, String custName, String custEmail, int custAge, String custPhoneNo,
+			String custGender, String custAddress) {
+<span class="nc" id="L33">		super();</span>
+<span class="nc" id="L34">		this.id = id;</span>
+<span class="nc" id="L35">		this.customerID = customerID;</span>
+<span class="nc" id="L36">		this.custName = custName;</span>
+<span class="nc" id="L37">		this.custEmail = custEmail;</span>
+<span class="nc" id="L38">		this.custAge = custAge;</span>
+<span class="nc" id="L39">		this.custPhoneNo = custPhoneNo;</span>
+<span class="nc" id="L40">		this.custGender = custGender;</span>
+<span class="nc" id="L41">		this.custAddress = custAddress;</span>
+<span class="nc" id="L42">	}</span>
+
+	public String  getId() {
+<span class="nc" id="L45">		return id;</span>
+	}
+
+	public void setId(String id) {
+<span class="nc" id="L49">		this.id = id;</span>
+<span class="nc" id="L50">	}</span>
+
+	public UUID getCustomerID() {
+<span class="nc" id="L53">		return customerID;</span>
+	}
+
+	public void setCustomerID(UUID customerID) {
+<span class="nc" id="L57">		this.customerID = customerID;</span>
+<span class="nc" id="L58">	}</span>
+
+	public String getCustName() {
+<span class="nc" id="L61">		return custName;</span>
+	}
+
+	public void setCustName(String custName) {
+<span class="nc" id="L65">		this.custName = custName;</span>
+<span class="nc" id="L66">	}</span>
+
+	public String getCustEmail() {
+<span class="nc" id="L69">		return custEmail;</span>
+	}
+
+	public void setCustEmail(String custEmail) {
+<span class="nc" id="L73">		this.custEmail = custEmail;</span>
+<span class="nc" id="L74">	}</span>
+
+	public int getCustAge() {
+<span class="nc" id="L77">		return custAge;</span>
+	}
+
+	public void setCustAge(int custAge) {
+<span class="nc" id="L81">		this.custAge = custAge;</span>
+<span class="nc" id="L82">	}</span>
+
+	public String getCustPhoneNo() {
+<span class="nc" id="L85">		return custPhoneNo;</span>
+	}
+
+	public void setCustPhoneNo(String custPhoneNo) {
+<span class="nc" id="L89">		this.custPhoneNo = custPhoneNo;</span>
+<span class="nc" id="L90">	}</span>
+
+	public String getCustGender() {
+<span class="nc" id="L93">		return custGender;</span>
+	}
+
+	public void setCustGender(String custGender) {
+<span class="nc" id="L97">		this.custGender = custGender;</span>
+<span class="nc" id="L98">	}</span>
+
+	public String getCustAddress() {
+<span class="nc" id="L101">		return custAddress;</span>
+	}
+
+	public void setCustAddress(String custAddress) {
+<span class="nc" id="L105">		this.custAddress = custAddress;</span>
+<span class="nc" id="L106">	}</span>
+
+	@Override
+	public String toString() {
+<span class="nc" id="L110">		return &quot;Customer [id=&quot; + id + &quot;, customerID=&quot; + customerID + &quot;, custName=&quot; + custName + &quot;, custEmail=&quot;</span>
+				+ custEmail + &quot;, custAge=&quot; + custAge + &quot;, custPhoneNo=&quot; + custPhoneNo + &quot;, custGender=&quot; + custGender
+				+ &quot;, custAddress=&quot; + custAddress + &quot;]&quot;;
+	}
+
+}
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>
